@@ -1,0 +1,22 @@
+# Основные пути для мода
+
+# Путь к папке с основной библиотекой мода
+corePath=./core/mod.dll
+
+# Путь к папке с конфигурационными файлами
+dataPath=./BepCatInEx/cath_data2/
+
+# Путь к папке с дополнительными скриптами
+scriptsPath=./BepCatInEx/cat/
+
+# Путь к папке с текстурами
+texturesPath=./BepCatInEx/cat/textures/
+
+# Путь к обновлениям мода
+updatesPath=./BepCatInEx/catx_15/
+
+# Включение логирования
+loggingEnabled=true
+
+# Режим отладки
+debugMode=true

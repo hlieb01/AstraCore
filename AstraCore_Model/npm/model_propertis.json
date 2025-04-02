@@ -1,0 +1,27 @@
+{
+    "model_propertis": {
+        "AstraCore_Handler_Version": "1.0",
+        "AstraCore_Version": "1.0",
+        "AstraCoreBundle_Version": "1.0",
+        "AstraCoreModel_Version": "1.0",
+        "AstraCoreHandler_Version": "1.0"
+    },
+    "from_game_version": "2.3.1",
+    "timeline": {
+        "AstraCore_Handler_Model": [
+            "name",
+            "mini 1.0",
+            "dependencies",
+            "npm",
+            "io.design",
+            "model.cfg.ptt"
+        ],
+        "AstraCoreBundle_Model": {
+            "name": "AstraBundle1.2",
+            "dependencies":"npm",
+            "id.value":"ids.json",
+            "io.design":"cfg.info.pfgtg",
+            "model.predicate.propertis.omini":"key"
+        }
+    }
+}

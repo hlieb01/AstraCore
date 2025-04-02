@@ -1,0 +1,10 @@
+{
+    "bufftype":"ultmativeplant",
+    "buffhex":"#918d8a",
+    "IsGray":"true",
+    "colorname":"gray",
+    "damage":"1800",
+    "wave":"cricle",
+    "hex":"gray",
+    "usemodplants":true
+}

@@ -1,0 +1,71 @@
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Security;
+using System.Security.Permissions;
+
+[assembly: CompilationRelaxations(8)]
+[assembly: RuntimeCompatibility(WrapNonExceptionThrows = true)]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.Default | DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | DebuggableAttribute.DebuggingModes.EnableEditAndContinue | DebuggableAttribute.DebuggingModes.DisableOptimizations)]
+[assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
+[assembly: AssemblyVersion("0.0.0.0")]
+[module: UnverifiableCode]
+[module: RefSafetyRules(11)]
+
+[NullableContext(1)]
+[Nullable(0)]
+public class ModEntryPoint
+{
+    private static string LOG_FILE = "datacoreex_18p3c/operation_Log.log";
+
+    public static void Start()
+    {
+        Log("mod.dll загружен! Начинаем работу...");
+        CheckAndDisableOldMods();
+    }
+
+    private static void CheckAndDisableOldMods()
+    {
+        string path = "Bep_core/paths/spc_mods2";
+        string path2 = "geflop_xp80/spc_plugins";
+        if (!Directory.Exists(path))
+        {
+            Log("Папка с модами не найдена.");
+            return;
+        }
+        string[] files = Directory.GetFiles(path, "*.dll");
+        int num = 0;
+        while (num < files.Length)
+        {
+            string text = files[num];
+            if (IsModOutdated(text))
+            {
+                string fileName = Path.GetFileName(text);
+                string destFileName = Path.Combine(path2, fileName);
+                File.Move(text, destFileName);
+                Log(string.Concat("Мод ", fileName, " перемещён в устаревшие."));
+            }
+            num++;
+        }
+    }
+
+    private static bool IsModOutdated(string modFile)
+    {
+        return new FileInfo(modFile).CreationTime < DateTime.Now.AddMonths(-6);
+    }
+
+    private static void Log(string message)
+    {
+        DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(4, 2);
+        defaultInterpolatedStringHandler.AppendLiteral("[");
+        defaultInterpolatedStringHandler.AppendFormatted(DateTime.Now);
+        defaultInterpolatedStringHandler.AppendLiteral("] ");
+        defaultInterpolatedStringHandler.AppendFormatted(message);
+        defaultInterpolatedStringHandler.AppendLiteral("\n");
+        string contents = defaultInterpolatedStringHandler.ToStringAndClear();
+        File.AppendAllText(LOG_FILE, contents);
+        Console.WriteLine(message);
+    }
+}

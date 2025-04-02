@@ -1,0 +1,11 @@
+{
+    "coreVersion": "1.0",
+    "libraries": [
+      "core_library.dll"
+    ],
+    "enabledFeatures": {
+      "feature_1": true,
+      "feature_2": false
+    }
+  }
+  

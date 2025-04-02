@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="AstraCore">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DestruciveModPvzFusionMod.zip!/" />
+      <root url="jar://$PROJECT_DIR$/AstraCore.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

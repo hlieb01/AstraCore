@@ -1,0 +1,11 @@
+using PvZ.Fusion;
+
+public class MyMod : Mod
+{
+    public override void Initialize()
+    {
+        // Используем API для добавления нового растения
+        Plant newPlant = new Plant("plug", 50);
+        PvZ.Fusion.Game.AddPlant(newPlant);
+    }
+}

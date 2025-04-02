@@ -1,0 +1,34 @@
+{
+    "name": "electric_sniper",
+    "AstraCore_Version":"1.0",
+    "AstraCoreModel_Version":"1.0",
+    "AstraCoreBundle_Version":"1.0",
+    "AstraCoreHandler_Version":"1.0",
+    "time":[
+        "30sec = run.slien_of-Moon.xml.start.demo",
+        "50sec = run.moonstarpad.xml.demo "
+        ],
+    "buff":"new",
+    "unqinedamage":"500",  
+    "projectilecount":10,
+    "ability": "none",
+    "shoot": "sliver.sun.cabage",
+    "game_version":"2.3.1",
+    "direction": "right",
+    "shoot_range": "front",
+    "hp": 900000,
+    "craft": {
+        "type":"MrPotato",
+        "components": [
+            "silver_cabage",
+            "good_sun_Cabage",
+            "silver_cabage"
+        ],
+        "potatocraft":true,
+        "plant4type":"catapult",
+        "cost": 1500,
+        "description": "Craft a powerful electric sniper plant."
+    },
+    "power": "unique",
+    "lore": "silver cabage + good sun cabage + silver cabage and MrPotato "
+}
