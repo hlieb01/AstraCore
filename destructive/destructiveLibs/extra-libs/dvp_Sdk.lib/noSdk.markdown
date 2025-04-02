@@ -1,1 +1,0 @@
-cfg = noSdk sdk develpment = false npm.true

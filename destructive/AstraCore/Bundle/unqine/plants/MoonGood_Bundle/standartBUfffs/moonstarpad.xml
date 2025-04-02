@@ -1,9 +1,0 @@
-<buff>
- <source src="moonstarpad.json"></source>
- <design startdesign="imperator.starfruit"></design>
- <buffhex hex="#918d8a" white="add.40" bright="add.13" starthex="50.sec do starpad or starpad or avlible"></buffhex>
- <pleaceholder class="" class="carambol.starpad"></pleaceholder>
- <projecileboom class="for" staraim="true" startinterval="50sec" onzombiestardamage="9000" startcss="twostartnewrotation"></projecileboom>
- <buffcss hex="#918d8a" white="add.40" bright="add.13" design="wave" figure="crug" stage="" plan="allrotation"></buffcss>
- <bloom type="shat" shat="hex.white.brigght"  damege="pleaceholder.boom">1900</bloom>
-</buff>

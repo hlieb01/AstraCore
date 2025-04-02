@@ -1,7 +1,0 @@
-<buff>
- <source src="sien_of-Moon.json"></source>
- <buffhex hex="#918d8a"></buffhex>
- <pleaceholder class="bloom" class="cricle.wave"></pleaceholder>
- <buffcss hex="#918d8a" design="wave" figure="crug" stage="all" plan="allrotation"></buffcss>
- <bloom type="shat" shat="hex" damege="pleaceholder.bloom">1900</bloom>
-</buff>

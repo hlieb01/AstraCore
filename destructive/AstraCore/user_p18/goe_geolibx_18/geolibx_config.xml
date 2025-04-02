@@ -1,8 +1,0 @@
-<config>
-  <library>geolibx.dll</library>
-  <enabled>true</enabled>
-  <features>
-    <feature name="geometric_processing" enabled="true" />
-    <feature name="advanced_calculations" enabled="false" />
-  </features>
-</config>
